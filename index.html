@@ -1,103 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlaZone</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
-    }
+<meta charset="UTF-8">
 
-    body{
-      background:#0f0f0f;
-      color:white;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header{
-      background:#c8102e;
-      padding:20px;
-      text-align:center;
-      box-shadow:0 5px 20px rgba(0,0,0,.4);
-    }
+<title>FlaZone</title>
 
-    .logo{
-      width:90px;
-      margin-bottom:10px;
-    }
+<style>
 
-    h1{
-      font-size:34px;
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
 
-    .container{
-      padding:20px;
-    }
+body{
+background:#111;
+color:white;
+}
 
-    .card{
-      background:#1b1b1b;
-      border-radius:20px;
-      padding:20px;
-      margin-top:20px;
-    }
+header{
+background:#c8102e;
+padding:25px;
+text-align:center;
+}
 
-    .titulo{
-      color:#ff4040;
-      font-size:20px;
-      margin-bottom:20px;
-      text-align:center;
-    }
+header h1{
+font-size:34px;
+}
 
-    .times{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+header p{
+margin-top:5px;
+opacity:.8;
+}
 
-    .time{
-      text-align:center;
-      width:40%;
-    }
+.container{
+padding:20px;
+}
 
-    .escudo{
-      width:90px;
-      height:90px;
-      object-fit:contain;
-    }
+.card{
 
-    .vs{
-      font-size:28px;
-      font-weight:bold;
-      color:#888;
-    }
+background:#1f1f1f;
 
-    .info{
-      margin-top:25px;
-      text-align:center;
-      font-size:18px;
-      color:#ddd;
-    }
+border-radius:18px;
 
-    button{
-      width:100%;
-      margin-top:25px;
-      padding:16px;
-      background:#c8102e;
-      border:none;
-      color:white;
-      border-radius:15px;
-      font-size:18px;
-      cursor:pointer;
-    }
+padding:20px;
 
-    button:hover{
-      background:#a10d25;
-    }
-  </style>
+margin-bottom:18px;
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+color:#ff4040;
+
+}
+
+.jogo{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+.time{
+
+text-align:center;
+
+width:40%;
+
+}
+
+.escudo{
+
+width:70px;
+
+height:70px;
+
+object-fit:contain;
+
+}
+
+.vs{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#777;
+
+}
+
+.data{
+
+text-align:center;
+
+margin-top:10px;
+
+font-size:17px;
+
+color:#ccc;
+
+}
+
+.botao{
+
+margin-top:20px;
+
+width:100%;
+
+padding:15px;
+
+background:#c8102e;
+
+border-radius:12px;
+
+text-align:center;
+
+font-weight:bold;
+
+}
+
+.menu{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+height:70px;
+
+background:#181818;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+border-top:1px solid #333;
+
+}
+
+.item{
+
+text-align:center;
+
+font-size:14px;
+
+}
+
+</style>
 
 </head>
 
@@ -105,11 +172,9 @@
 
 <header>
 
-<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwwrduJDwicBxMJB8Oj7XG1XfJtP4R1hwMO8HMlFY5A&s=10">
+<h1>🔴 FlaZone</h1>
 
-<h1>FLAZONE</h1>
-
-<p>O site da Nação.</p>
+<p>O SITE DA NAÇÃO </p>
 
 </header>
 
@@ -117,57 +182,80 @@
 
 <div class="card">
 
-<div class="titulo">
-PRÓXIMO JOGO
-</div>
+<h2>🔥 Próximo jogo</h2>
 
-<div class="times">
+<div class="jogo">
 
 <div class="time">
 
-<img class="escudo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSwwrduJDwicBxMJB8Oj7XG1XfJtP4R1hwMO8HMlFY5A&s=10">
+<img class="escudo" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Flamengo_logo.svg">
 
-<h3>Flamengo</h3>
+<p>Flamengo</p>
 
 </div>
 
-<div class="vs">VS</div>
+<div class="vs">
+
+VS
+
+</div>
 
 <div class="time">
 
-<img class="escudo" src="https://logodetimes.com/wp-content/uploads/sao-paulo.png">
+<img class="escudo" src="https://upload.wikimedia.org/wikipedia/en/0/05/S%C3%A3o_Paulo_FC_logo.svg">
 
-<h3>São Paulo</h3>
-
-</div>
+<p>São Paulo</p>
 
 </div>
 
-<div class="info">
+</div>
 
-📅 27/07/2026<br><br>
+<div class="data">
 
-🕡 18:30
+DOM, 27/07/2026<br>
+
+18 : 30
 
 </div>
 
-<button>
+<div class="botao">
+
 Ver detalhes
-</button>
 
 </div>
+
+</div>
+
+<div class="card">
+
+<h2>📰 Notícias</h2>
+
+<p>Em breve...</p>
+
+</div>
+
+<div class="card">
+
+<h2>  Brasileirão</h2>
+
+<p>Tabela em breve...</p>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<div class="item">🏠<br>Início</div>
+
+<div class="item">⚽<br>Jogos</div>
+
+<div class="item">📰<br>Notícias</div>
+
+<div class="item">👤<br>Elenco</div>
 
 </div>
 
 </body>
+
 </html>
-[20:28, 23/07/2026] +55 22 99762-1215: <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlaZone</title>
-</head>
-
-<body>
-
